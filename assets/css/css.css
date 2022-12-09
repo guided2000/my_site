@@ -1,0 +1,40 @@
+#bg{
+    width: 100%;
+    height: 120%;
+    z-index: -1; 
+    position: fixed ;
+    margin-top: -30%;
+}
+#post{
+    margin-bottom: 5%;
+   
+}
+#details{
+    background-color: rgba(0, 0, 0, 0.58);
+    margin-top: 30%;
+    padding-bottom: 2%;
+    /* z-index: 100; */
+}
+#img{
+    width: 80%;
+    height: auto;
+    margin: 0%,30%;
+    position: relative;
+    padding-left: 20%;
+}
+#text{
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding:2% 20% ;
+    text-align: center;
+}
+#info{
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding:2% 20% ;
+    text-align: center;
+}
+#title{
+    text-align: center;
+    padding: 0% 30%;
+}
