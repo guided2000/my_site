@@ -50,7 +50,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
+            <a class="nav-link active" aria-current="page" href="{%url 'website:index'%}">Home</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -58,7 +58,7 @@
               Dropdown
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="">About</a></li>
+              <li><a class="dropdown-item" href="#">About</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
@@ -80,15 +80,34 @@
 
     <!-- ======= Portfolio Details ======= -->
     <div>
+
+
       <div id="details">
+        <div id="n">
+          <div id="categor" >
+            <h4 id="titel">....category</h4>
+            <ul>
+                <li><a id="category" href="#">web</a></li>
+                <li><a id="category" href="#">app</a></li>
+                <li><a id="category" href="#">all</a></li>
+            </ul>
+          </div>
+          <div id="view" >
+            <h4 id="titel">.....view</h4>
+            <ul>
+              <li>Today:<span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span></li>
+              <li>Month:<span data-purecounter-start="0" data-purecounter-end="255" data-purecounter-duration="1" class="purecounter"></span></li>
+              <li>total:<span data-purecounter-start="0" data-purecounter-end="255" data-purecounter-duration="1" class="purecounter"></span></li>
+            </ul>
+          </div>
+        </div>
         <div class="container">
           <h2 id="title">This is an example of blog detail</h2>
 
-
-
+      
           <div id="post">
             <div class="container">
-              <img id="img" width="100%" src="{% static '/img/portfolio/portfolio-details-1.jpg '%}" alt="">
+              <img id="img1" width="100%" src="{% static '/img/portfolio/portfolio-details-1.jpg '%}" alt="">
               <p id="text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum atque vitae quaerat, vel magnam
                 suscipit sed nesciunt neque qui, voluptate architecto. Perspiciatis, id non maxime esse aperiam
@@ -106,7 +125,7 @@
 
 
           <div id="post">
-            <img id="img" width="100%" src="{% static '/img/portfolio/portfolio-details-2.jpg '%}" alt="">
+            <img id="img2" width="100%" src="{% static '/img/portfolio/portfolio-details-2.jpg '%}" alt="">
             <p id="text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum atque vitae quaerat, vel magnam suscipit
               sed nesciunt neque qui, voluptate architecto. Perspiciatis, id non maxime esse aperiam necessitatibus.
@@ -122,7 +141,7 @@
 
 
           <div id="post">
-            <img id="img" width="100%" src="{% static '/img/portfolio/portfolio-details-3.jpg '%}" alt="">
+            <img id="img3" width="100%" src="{% static '/img/portfolio/portfolio-details-3.jpg '%}" alt="">
             <p id="text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum atque vitae quaerat, vel magnam suscipit
               sed nesciunt neque qui, voluptate architecto. Perspiciatis, id non maxime esse aperiam necessitatibus.

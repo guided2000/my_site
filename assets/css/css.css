@@ -13,14 +13,14 @@
     background-color: rgba(0, 0, 0, 0.58);
     margin-top: 30%;
     padding-bottom: 2%;
-    /* z-index: 100; */
+    /* z-index: 100; 8*/
 }
-#img{
+#img1{
     width: 80%;
     height: auto;
-    margin: 0%,30%;
+    padding-right: 7%;
     position: relative;
-    padding-left: 20%;
+    padding-left:15%;
 }
 #text{
     position: relative;
@@ -37,4 +37,39 @@
 #title{
     text-align: center;
     padding: 0% 30%;
+}
+#view{
+    color: rgb(255, 255, 255); 
+    position: relative;
+    
+}
+#category{
+    color: rgb(255, 255, 255); 
+    text-decoration : none ;
+    position:relative;
+}
+
+#n{
+    background-color: rgba(72, 72, 72, 0.61);
+    border-radius:  20px;
+    width: 13%;
+    height: 5%;
+    float: left;
+}
+#n :hover{
+    
+    color: rgba(38, 38, 38, 0.523);
+    scale: 2%;
+}
+#titel{
+    color: aliceblue;
+    text-align:start;
+    margin-left: 20%;
+}
+#img3,#img2{
+    width: 80%;
+    height: auto;
+    
+    position: relative;
+    padding-left:20%;
 }
