@@ -1,3 +1,7 @@
+*{
+    font-family: "WildWest" ;
+    
+}
 #bg{
     width: 100%;
     height: 120%;
@@ -5,38 +9,18 @@
     position: fixed ;
     margin-top: -30%;
 }
-#post{
-    margin-bottom: 5%;
-   
-}
+
 #details{
     background-color: rgba(0, 0, 0, 0.58);
     margin-top: 30%;
     padding-bottom: 2%;
     /* z-index: 100; 8*/
 }
-#img1{
-    width: 80%;
-    height: auto;
-    padding-right: 7%;
-    position: relative;
-    padding-left:15%;
-}
-#text{
-    position: relative;
-    color: rgb(255, 255, 255);
-    padding:2% 20% ;
-    text-align: center;
-}
-#info{
-    position: relative;
-    color: rgb(255, 255, 255);
-    padding:2% 20% ;
-    text-align: center;
-}
+
 #title{
     text-align: center;
     padding: 0% 30%;
+    font-size: xx-large;
 }
 #view{
     color: rgb(255, 255, 255); 
@@ -50,26 +34,85 @@
 }
 
 #n{
-    background-color: rgba(72, 72, 72, 0.61);
+    margin-top: 7%;
+    background-color: rgba(44, 44, 44, 0.50);
     border-radius:  20px;
     width: 13%;
     height: 5%;
     float: left;
+    font-size: large;
 }
-#n :hover{
-    
-    color: rgba(38, 38, 38, 0.523);
-    scale: 2%;
-}
+
 #titel{
     color: aliceblue;
-    text-align:start;
+    text-align:center;
     margin-left: 20%;
+    font-size: large;
 }
-#img3,#img2{
+
+.post{
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: rgb(44, 44, 44);
+    background-color: rgba(44, 44, 44, 0.50);
     width: 80%;
-    height: auto;
+    font-size: large;
+    margin-top: 5%;
     
+}
+.media{
+    width:100%;
+    height: auto;
     position: relative;
-    padding-left:20%;
+}
+.title{
+    text-align: start;
+    margin-left: 17%;
+}
+.parent{
+    display: flex;
+}
+.info{
+    position: relative;
+    text-align:end;
+    width: 15%;
+    margin-right: 0%;
+    padding: 0%;
+    font-size:x-small;
+    
+    
+
+}
+.content{
+    position: relative;
+    text-align: start;
+    padding: 0%;
+    width: 60%;
+    margin-left: 1%;
+    
+}
+.footer{
+    background-color: rgba(44, 44, 44, 0.50) ;
+    width: 100%;
+    height: 25%;
+    /* display: flex; */
+    font-size: large;
+    color: rgb(255, 255, 255);
+    /* z-index: 2; */
+    margin-bottom: -1%;
+    display: flex;                                            
+}
+.co{
+    width: 30%;
+    margin-left: 45%;
+}
+#liveToast{
+    z-index: 30000000;
+    position: relative;
+    /* display: block; */
+    opacity: 100%;
+    font-size: smaller;
+}
+.toast-body{
+    background-color: rgba(44, 44, 44, 0.50);
 }

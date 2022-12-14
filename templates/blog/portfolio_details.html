@@ -16,11 +16,11 @@
 
   <!-- back gerund -->
   <img id="bg" src="{%static '/img/bg.jpg'%}" alt="">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Something -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
@@ -41,32 +41,32 @@
   ======================================================== -->
   <!-- navbar -->
 
-  <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top fs-3">
+    <div class="container-fluid fs-3">
+      <button class="navbar-toggler fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon fs-3"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse fs-3" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{%url 'website:index'%}">Home</a>
+            <a class="nav-link active fs-3" aria-current="page" href="{%url 'website:index'%}">Home</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdownfs-3">
+            <a class="nav-link dropdown-toggle fs-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item fs-4" href="#">About</a></li>
+              <li><a class="dropdown-item fs-4" href="#">Another action</a></li>
+              <li><a class="dropdown-item fs-4" href="#">Something else here</a></li>
             </ul>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2 fs-3" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success fs-3" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -85,7 +85,7 @@
       <div id="details">
         <div id="n">
           <div id="categor" >
-            <h4 id="titel">....category</h4>
+            <p id="titel">category</p>
             <ul>
                 <li><a id="category" href="#">web</a></li>
                 <li><a id="category" href="#">app</a></li>
@@ -93,7 +93,7 @@
             </ul>
           </div>
           <div id="view" >
-            <h4 id="titel">.....view</h4>
+            <p id="titel">view</p>
             <ul>
               <li>Today:<span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span></li>
               <li>Month:<span data-purecounter-start="0" data-purecounter-end="255" data-purecounter-duration="1" class="purecounter"></span></li>
@@ -104,66 +104,114 @@
         <div class="container">
           <h2 id="title">This is an example of blog detail</h2>
 
-      
-          <div id="post">
-            <div class="container">
-              <img id="img1" width="100%" src="{% static '/img/portfolio/portfolio-details-1.jpg '%}" alt="">
-              <p id="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum atque vitae quaerat, vel magnam
-                suscipit sed nesciunt neque qui, voluptate architecto. Perspiciatis, id non maxime esse aperiam
-                necessitatibus. Veniam, voluptatibus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus accusantium suscipit quibusdam, porro
-                ad earum. Quaerat impedit cupiditate, culpa accusamus nesciunt iure, deleniti odit sit veniam quod qui
-                nisi odio!
-              </p>
-              <p id="info">
-                author: Everyone <br>
-                Release date: 2022/12/15
-              </p>
+
+          <div class="post container">
+            <div class="media">
+              <img width="100%" src="{% static '/img/portfolio/portfolio-details-1.jpg '%}" alt="">
             </div>
+            <div class="title">
+              <h1>any title!!!</h1>
+            </div>
+            <div class="parent">
+              <div class="info">
+                <p>Everyone  <span class="glyphicon glyphicon-user"></span></p>
+                <p>2022/nov/15  <span class="glyphicon glyphicon-calendar"></span></p>
+                <p>7  view  <span class="glyphicon glyphicon-eye-open"></span></p>
+              </div>
+              
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in quo doloremque inventore accusantium corrupti beatae distinctio ut sint eaque asperiores necessitatibus commodi, ducimus quia natus autem repellat sit nobis!</p>
+              </div>
+            </div>
+           
+          </div>
+    
+
+          <div class="post container">
+            <div class="media">
+              <img  width="100%" src="{% static '/img/portfolio/portfolio-details-2.jpg '%}" alt="">
+            </div>
+            <div class="title">
+              <h1>any title!!!</h1>
+            </div>
+            <div class="parent">
+              <div class="info">
+                <p>Everyone  <span class="glyphicon glyphicon-user"></span></p>
+                <p>2022/nov/15  <span class="glyphicon glyphicon-calendar"></span></p>
+                <p>7  view  <span class="glyphicon glyphicon-eye-open"></span></p>
+              </div>
+              
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in quo doloremque inventore accusantium corrupti beatae distinctio ut sint eaque asperiores necessitatibus commodi, ducimus quia natus autem repellat sit nobis!</p>
+              </div>
+            </div>
+           
           </div>
 
 
-          <div id="post">
-            <img id="img2" width="100%" src="{% static '/img/portfolio/portfolio-details-2.jpg '%}" alt="">
-            <p id="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum atque vitae quaerat, vel magnam suscipit
-              sed nesciunt neque qui, voluptate architecto. Perspiciatis, id non maxime esse aperiam necessitatibus.
-              Veniam, voluptatibus.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis beatae doloribus odit dicta ullam modi est
-              minima reprehenderit, vel facere tenetur velit in, perferendis at adipisci, earum fugit incidunt harum?
-            </p>
-            <p id="info">
-              author: Everyone <br>
-              Release date: 2022/12/15
-            </p>
+          <div class="post container">
+            <div class="media">
+              <img width="100%" src="{% static '/img/portfolio/portfolio-details-3.jpg '%}" alt="">
+            </div>
+            <div class="title">
+              <h1>any title!!!</h1>
+            </div>
+            <div class="parent">
+              <div class="info">
+                <p>Everyone  <span class="glyphicon glyphicon-user"></span></p>
+                <p>2022/nov/15  <span class="glyphicon glyphicon-calendar"></span></p>
+                <p>7  view  <span class="glyphicon glyphicon-eye-open"></span></p>
+              </div>
+              
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in quo doloremque inventore accusantium corrupti beatae distinctio ut sint eaque asperiores necessitatibus commodi, ducimus quia natus autem repellat sit nobis!</p>
+              </div>
+            </div>
+           
           </div>
-
-
-          <div id="post">
-            <img id="img3" width="100%" src="{% static '/img/portfolio/portfolio-details-3.jpg '%}" alt="">
-            <p id="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum atque vitae quaerat, vel magnam suscipit
-              sed nesciunt neque qui, voluptate architecto. Perspiciatis, id non maxime esse aperiam necessitatibus.
-              Veniam, voluptatibus.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, blanditiis, pariatur vel eligendi porro
-              autem iure adipisci nemo officiis delectus architecto dolor maiores deserunt. Reiciendis voluptates et
-              tenetur blanditiis ipsum.
-            </p>
-            <p id="info">
-              author: Everyone <br>
-              Release date: 2022/12/15
-            </p>
-          </div>
-
 
         </div>
       </div>
+     
     </div><!-- End Portfolio Details -->
-
+  
   </main><!-- End #main -->
 
+  <div class="footer ">
+    <div>
+      <p>+989156557328 <span class="glyphicon glyphicon-earphone"></span></p> 
+    <p>mahdi.yazdanpanah000@gmail.com <span class="glyphicon glyphicon-globe"></span></p> 
+    </div>
+    <div class="co ">
+      <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-success" id="liveToastBtn">send</button>
 
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="{% static '/img/favicon.png '%}" class="rounded me-2" alt="...">
+      <strong class="me-auto">mahdi yazdanpanah</strong>
+      <small>just now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, your message has been sent successfully
+I will answer you as soon as I am online
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+  </div>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="{% static '/vendor/purecounter/purecounter_vanilla.js '%}"></script>
@@ -178,5 +226,12 @@
   <script src="{% static '/js/main.js '%}"></script>
 
 </body>
-
+<script>
+  $(document).ready(function(){
+    $('#liveToastBtn').click(function(){
+      $('#liveToast').toast({delay:10000})
+      $('#liveToast').toast('show')
+    });
+  });
+</script>
 </html>
