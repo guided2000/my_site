@@ -22,10 +22,11 @@
     padding: 0% 30%;
     font-size: xx-large;
 }
-#view{
+#widget{
     color: rgb(255, 255, 255); 
     position: relative;
-    
+    font-size: large;
+    height: 50%;
 }
 #category{
     color: rgb(255, 255, 255); 
@@ -34,26 +35,25 @@
 }
 
 #n{
-    margin-top: 7%;
+
     background-color: rgba(44, 44, 44, 0.50);
-    border-radius:  20px;
-    width: 13%;
-    height: 5%;
-    float: left;
-    font-size: large;
+    height: 100%;
+    
 }
 
 #titel{
     color: aliceblue;
-    text-align:center;
-    margin-left: 20%;
+    border: 100px;
+    
+    text-align:start;
     font-size: large;
+    background-color: rgb(6, 35, 0);
 }
 
 .post{
     color: rgb(255, 255, 255);
     border-radius: 10px;
-    border-color: rgb(44, 44, 44);
+    border-color: rgb(255, 254, 254);
     background-color: rgba(44, 44, 44, 0.50);
     width: 80%;
     font-size: large;
@@ -71,6 +71,7 @@
 }
 .parent{
     display: flex;
+
 }
 .info{
     position: relative;
@@ -78,7 +79,8 @@
     width: 15%;
     margin-right: 0%;
     padding: 0%;
-    font-size:x-small;
+    font-size:small;
+    color: rgb(111, 111, 111);
     
     
 
@@ -115,4 +117,65 @@
 }
 .toast-body{
     background-color: rgba(44, 44, 44, 0.50);
+}
+a{
+    text-decoration: none;
+    color: rgb(111, 111, 111);
+}
+#item{
+    width: 100%;
+    height: 33%;
+    font-size: small;
+    position: relative;
+    margin-bottom: 0%;
+    float: left;
+}
+#itemimg{
+    width: 30%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+#w{
+    float: right;
+    margin-top: 10%;
+    border-radius:  20px;
+    width: 13%;
+    height: 10%;
+}
+li{
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(111, 111, 111);
+}
+#pagination{
+    position: relative;
+    width: 20%;
+    height: 15%;
+    margin-left: 40%;
+}
+#page-item{
+    background-color: rgb(6, 35, 0);
+    border-color:rgb(6, 35, 0) ;
+    color: rgb(255, 255, 255);
+    
+}
+#page{
+    background-color: rgb(13, 51, 5);
+    border-color:rgb(13, 51, 5) ;
+    color: rgb(255, 255, 255);
+    
+}
+#pw{
+    font-size: larger;
+    margin-bottom: 0%;
+}
+#cat{
+    position: relative;
+    margin-bottom: 0;
+    display: inline;
 }

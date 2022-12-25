@@ -11,52 +11,42 @@
       <div id="details">
         <div id="w">
           {% include 'blog/Widget.html' %}
-          {% post_categories %}
+          {% include 'blog/Widget1.html' %}
           {% include 'blog/Widget2.html' %}
           {% latest_posts %}
         </div>
         <div class="container">
-          <h1 id="title">blog detail</h1>
+          <h1 id="title">{{posts.title}}</h1>
 
-          {% for post in posts %}
+
           <div class="post container">
             <div class="media">
-              <img width="100%" src="{{post.image.url}}" alt="">
+              <img width="100%" src="{{posts.image.url}}"  alt="">
             </div>
             <div class="title">
-              <a href="{% url 'blog:single' pid=post.id %}"><h1>{{post.title}}</h1></a>
+              <h1>{{posts.title}}</h1>
             </div>
             <div class="parent">
               <div class="info">
-                <p><a href="{% url 'blog:author' author_username=post.author.username %}">{{post.author.get_full_name}}</a> <span class="glyphicon glyphicon-user"></span></p>
-                <p>{{post.published_date | date:" D d M Y"}} <span class="glyphicon glyphicon-calendar"></span></p>
-                <p>{{post.counted_views}} view <span class="glyphicon glyphicon-eye-open"></span></p>
+                <p>{{posts.author.get_full_name}} <span class="glyphicon glyphicon-user"></span></p>
+                <p>{{posts.published_date | date:" D d M Y"}} <span class="glyphicon glyphicon-calendar"></span></p>
+                <p>{{posts.counted_views}} view <span class="glyphicon glyphicon-eye-open"></span></p>
                 <p>
-                  {% for cat in post.category.all %}
-                  <a href="{% url 'blog:category' cat_name=cat.name %}">{{cat}}</a>{% if not forloop.last %},{% endif %}
+                  {% for cat in posts.category.all %}
+                  <a href="#">{{cat}}</a>{% if not forloop.last %},{% endif %}
                   {% endfor %}
                 </p>
               </div>
 
               <div class="content">
-                <p>{{post.content|truncatechars:150}}</p>
-                <a href="{% url 'blog:single' pid=post.id %}" class="btn btn-Success active" aria-current="page">more</a>
+                <p>{{posts.content}}</p>
 
               </div>
             </div>
 
           </div>
-          {% endfor %}
 
         </div>
-          <ul class="pagination" id="pagination" >
-            <li class="page-item" ><a class="page-link " id="page-item" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" id="page" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" id="page" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" id="page" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" id="page-item" href="#">Next</a></li>
-          </ul>
-        
       </div>
 
     </div>
@@ -113,4 +103,5 @@
   <script src="{% static '/js/main.js '%}"></script>
 
 </body>
+
 {% endblock %}

@@ -1,0 +1,16 @@
+{% load static %}
+<div id="n">
+    <p id="titel">category</p>
+    <div id="Widget">
+        <ul>
+            {% for name,count in categories.items %}
+            <li>
+                <a id="category" href="{% url 'blog:category' cat_name=name %}">
+                <p id="cat">{{name}}:</p>
+                <p id="cat">{{count}}</p>
+            </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

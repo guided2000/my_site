@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>blog</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static '/img/favicon.png '%}" rel="icon">
+    <link href="{% static '/img/apple-touch-icon.png '%}" rel="apple-touch-icon">
+
+    <!-- back gerund -->
+    <img id="bg" src="{%static '/img/bg.jpg'%}" alt="">
+    <!-- Something -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
+    <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
+    <link href="{% static '/vendor/boxicons/css/boxicons.min.css '%}" rel="stylesheet">
+    <link href="{% static '/vendor/glightbox/css/glightbox.min.css '%}" rel="stylesheet">
+    <link href="{% static '/vendor/remixicon/remixicon.css '%}" rel="stylesheet">
+    <link href="{% static '/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static '/css/css.css '%}" rel="stylesheet">
+
+    <!-- ============================================================================== -->
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top fs-3">
+        <div class="container-fluid fs-3">
+            <button class="navbar-toggler fs-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-3"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-3" aria-current="page" href="{%url 'website:index'%}">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdownfs-3">
+                        <a class="nav-link dropdown-toggle fs-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-4" href="#">About</a></li>
+                            <li><a class="dropdown-item fs-4" href="#">Another action</a></li>
+                            <li><a class="dropdown-item fs-4" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 fs-3" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success fs-3" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+</head>
+{% block content %}
+
+
+{% endblock %}
+<script>
+    $(document).ready(function () {
+        $('#liveToastBtn').click(function () {
+            $('#liveToast').toast({ delay: 10000 })
+            $('#liveToast').toast('show')
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,14 @@
+{% load static %}
+
+<p id="titel">latest posts</p>
+<div id="n">
+    {% for post in posts %}
+    <div id="widget">
+        <div id="item">
+            <img id="itemimg" src="{{post.image.url}}" alt="">
+            <a href="{% url 'blog:single' pid=post.id %}" id="pw"><p style="margin-bottom: 0px;">{{post.title|truncatechars:20}}</p></a>
+            <h6 style="margin-bottom: 0px;">{{post.published_date | date:"d M Y"}}</h6>
+        </div>
+    </div>
+    {% endfor %}
+</div>
