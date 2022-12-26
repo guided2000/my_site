@@ -3,7 +3,7 @@
 {% load blog_tags %}
 {% block content %}
 
-<body>
+
 
   <!-- ======= Portfolio Details ======= -->
   <main id="main">
@@ -64,53 +64,5 @@
 
   </main><!-- End #main -->
 
-  <div class="footer ">
-    <div>
-      <p>+989156557328 <span class="glyphicon glyphicon-earphone"></span></p>
-      <p>mahdi.yazdanpanah000@gmail.com <span class="glyphicon glyphicon-globe"></span></p>
-    </div>
-    <div class="co ">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="button" class="btn btn-success" id="liveToastBtn">send</button>
-
-      <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <img src="{% static '/img/favicon.png '%}" class="rounded me-2" alt="...">
-            <strong class="me-auto">mahdi yazdanpanah</strong>
-            <small>just now</small>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
-          <div class="toast-body">
-            Hello, your message has been sent successfully
-            I will answer you as soon as I am online
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="{% static '/vendor/purecounter/purecounter_vanilla.js '%}"></script>
-  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js '%}"></script>
-  <script src="{% static '/vendor/glightbox/js/glightbox.min.js '%}"></script>
-  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js '%}"></script>
-  <script src="{% static '/vendor/swiper/swiper-bundle.min.js '%}"></script>
-  <script src="{% static '/vendor/waypoints/noframework.waypoints.js '%}"></script>
-  <script src="{% static '/vendor/php-email-form/validate.js '%}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{% static '/js/main.js '%}"></script>
-
-</body>
+ 
 {% endblock %}
