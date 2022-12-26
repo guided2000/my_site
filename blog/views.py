@@ -16,3 +16,12 @@ def blog_single(request,pid=6):
     posts = get_object_or_404(post,pk=pid)
     context={'posts':posts}
     return render(request,'blog/single.html',context)
+
+
+def blog_search(request):
+    posts = post.objects.filter(status=1)
+    if request.method == 'GET' :
+        posts=posts.filter(content__contains=request.GET.get('s'))
+    context={'posts':posts}
+    return render(request,'blog/portfolio_details.html',context)
+ 
