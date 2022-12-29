@@ -3,94 +3,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>blog</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <title>blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="{% static '/img/favicon.png '%}" rel="icon">
-    <link href="{% static '/img/apple-touch-icon.png '%}" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png '%}" rel="icon">
+  <link href="{% static '/img/apple-touch-icon.png '%}" rel="apple-touch-icon">
 
-    <!-- back gerund -->
-    <img id="bg" src="{%static '/img/bg.jpg'%}" alt="">
-    <!-- Something -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- back gerund -->
+  <img id="bg" src="{%static '/img/bg.jpg'%}" alt="">
+  <!-- Something -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <!-- Vendor CSS Files -->
-    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
-    <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
-    <link href="{% static '/vendor/boxicons/css/boxicons.min.css '%}" rel="stylesheet">
-    <link href="{% static '/vendor/glightbox/css/glightbox.min.css '%}" rel="stylesheet">
-    <link href="{% static '/vendor/remixicon/remixicon.css '%}" rel="stylesheet">
-    <link href="{% static '/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
+  <link href="{% static '/vendor/boxicons/css/boxicons.min.css '%}" rel="stylesheet">
+  <link href="{% static '/vendor/glightbox/css/glightbox.min.css '%}" rel="stylesheet">
+  <link href="{% static '/vendor/remixicon/remixicon.css '%}" rel="stylesheet">
+  <link href="{% static '/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="{% static '/css/css.css '%}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/css.css '%}" rel="stylesheet">
 
-    <!-- ============================================================================== -->
-    <!-- navbar -->
+  <!-- ============================================================================== -->
+  <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top fs-3">
-        <div class="container-fluid fs-3">
-            <button class="navbar-toggler fs-3" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon fs-3"></span>
-            </button>
-            <div class="collapse navbar-collapse fs-3" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active fs-3" aria-current="page" href="{%url 'website:index'%}">Home</a>
-                    </li>
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top fs-5 " style="height:1cm;  ">
+    <div class="container-fluid fs-5 " style="height:1cm;  ">
+      <button class="navbar-toggler fs-5 " type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" style="height:1cm;  ">
+        <span class="navbar-toggler-icon fs-5 " style="height:1cm;  "></span>
+      </button>
+      <div class="collapse navbar-collapse fs-5 " id="navbarSupportedContent" style="height:1cm;  ">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" style="height:1cm;  ">
+            <a class="nav-link active fs-5 " style="height:1cm;  " aria-current="page"
+              href="{%url 'website:index'%}">Home</a>
+          </li>
 
-                    <li class="nav-item dropdownfs-3">
-                        <a class="nav-link dropdown-toggle fs-3" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item fs-4" href="#">About</a></li>
-                            <li><a class="dropdown-item fs-4" href="#">Another action</a></li>
-                            <li><a class="dropdown-item fs-4" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search" action="{% url 'blog:search' %}" method="get">
-                    <input class="form-control me-2 fs-3" type="search" placeholder="Search" name="s" aria-label="Search">
-                    <button class="btn btn-outline-success fs-3" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <!-- end navbar -->
+          <li class="nav-item dropdownfs-5 " style="height:1cm;  ">
+            <a class="nav-link dropdown-toggle fs-5 " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="height:1cm;  ">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" style="height:1cm;  ">
+              <li><a class="dropdown-item fs-4" style="height:1cm;  " href="#">About</a></li>
+              <li><a class="dropdown-item fs-4" style="height:1cm;  " href="#">Another action</a></li>
+              <li><a class="dropdown-item fs-4" style="height:1cm;  " href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" action="{% url 'blog:search' %}" method="get" style="height:1cm;  ">
+          <input class="form-control me-2 fs-5 " type="search" placeholder="Search" name="s" aria-label="Search"
+            style="height:1cm;  ">
+          <button class="btn btn-outline-success fs-5 " type="submit" style="height:1cm;  ">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
 </head>
+
 <body>
-{% block content %}
+  {% block content %}
 
 
-{% endblock %}
-<div class="footer ">
+  {% endblock %}
+  <div class="footer ">
     <div>
       <p>+989156557328 <span class="glyphicon glyphicon-earphone"></span></p>
       <p>mahdi.yazdanpanah000@gmail.com <span class="glyphicon glyphicon-globe"></span></p>
     </div>
-    <div class="co ">
+
+    <form action="{% url 'blog:newsletter' %}" method="post" class="co ">
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        {% csrf_token %}
+        <label for="exampleFormControlInput1" class="form-label">newsletter</label>
+        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="button" class="btn btn-success" id="liveToastBtn">send</button>
+      <button class="btn btn-success"  type="submit"  >send</button>
 
       <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -101,14 +102,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
           </div>
           <div class="toast-body">
-            Hello, your message has been sent successfully
-            I will answer you as soon as I am online
+            Hello, your email has been sent successfully
           </div>
         </div>
       </div>
-
-
-    </div>
+    </form>
   </div>
   </div>
 
@@ -126,12 +124,12 @@
 
 </body>
 <script>
-    $(document).ready(function () {
-        $('#liveToastBtn').click(function () {
-            $('#liveToast').toast({ delay: 10000 })
-            $('#liveToast').toast('show')
-        });
+  $(document).ready(function () {
+    $('#liveToastBtn').click(function () {
+      $('#liveToast').toast({ delay: 10000 })
+      $('#liveToast').toast('show')
     });
+  });
 </script>
 
 </html>
