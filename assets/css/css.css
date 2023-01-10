@@ -43,7 +43,7 @@
 #titel{
     color: aliceblue;
     border: 100px;
-    
+    margin-bottom: 0%;
     text-align:start;
     font-size: large;
     background-color: rgb(6, 35, 0);
@@ -195,4 +195,17 @@ a:hover{
     margin-bottom: 0;
     display: inline;
 }
+#tagbox{
+    font-size: large;
+    color: rgb(255, 255, 255);
+    width:30%;
+    padding: 3%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.58);
+    margin:10% 0% ; 
+    text-align: center;
+    position:relative ;
+   
+}
+
 

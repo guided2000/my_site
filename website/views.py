@@ -21,5 +21,7 @@ def contact_view(request):
         else:
             messages.add_message(request, messages.WARNING, 'Your message was not sent')
             return HttpResponseRedirect('/#contact')
-    form = ContactForm()
+        
+    else:
+        form = ContactForm()
     return render(request, 'website/index.html',{'form':form})

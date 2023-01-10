@@ -1,0 +1,10 @@
+{% load static %}
+
+<p id="titel">tag clouds</p>
+<div id="n" style="padding-top: 15px; padding-bottom: 15px; padding-left: 5px;">
+    {% for tag in posts.tags.all %}
+    <span id="tagbox"> <a  href="{% url 'blog:tag' tag_name=tag.name %}">{{tag.name}}</a></span>
+    {% endfor %}
+
+
+</div>

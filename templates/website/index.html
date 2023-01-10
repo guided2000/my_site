@@ -106,7 +106,8 @@
                 <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>collegian</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                  <span>mahdi.yazdanpanah000@gmail.com</span></li>
+                  <span>mahdi.yazdanpanah000@gmail.com</span>
+                </li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
               </ul>
             </div>
@@ -796,7 +797,7 @@
           </div>
         </div>
       </div>
-      
+
       <form action="{% url 'website:contact' %}" method="post" role="form" class="php-email-form mt-4">
         <div class="row">
           <div class="col-md-6 form-group">
@@ -815,19 +816,23 @@
         </div>
         <div class="my-3">
           <div class="loading">Loading</div>
-          
+
           {% if messages %}
           <ul class="messages">
-              {% for message in messages %}
-              <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-              {% endfor %}
+            {% for message in messages %}
+            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
           </ul>
           {% endif %}
         </div>
+             
         <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-
+      
     </div>
+    
+    </form>
+    </div>
+
   </section><!-- End Contact Section -->
   <!-- Vendor JS Files -->
   <script src="{% static '/vendor/purecounter/purecounter_vanilla.js'%}"></script>
@@ -836,7 +841,7 @@
   <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
   <script src="{% static '/vendor/swiper/swiper-bundle.min.js'%}"></script>
   <script src="{% static '/vendor/waypoints/noframework.waypoints.js'%}"></script>
-  
+
 
   <!-- Template Main JS File -->
   <script src="{% static '/js/main.js'%}"></script>
